@@ -1,0 +1,54 @@
+<!--
+ - Created by soura on 6/22/2023.
+ -->
+
+<!-- Project Plan Chart -->
+<template>
+    <div class="slds-clearfix">
+        <div class="slds-float_left left-region">
+            <div class="slds-m-top_medium slds-m-bottom_x-large">
+                <div class="slds-p-around_small">
+                    <div class="slds-grid slds-wrap">
+                        <div class="slds-col slds-size_1-of-2">
+                            <lightning-button-icon class="slds-m-left_xx-small" alternative-text="Critical Path" variant="container" icon-name="utility:data_mapping" onclick={enableOrDisableCriticalPath}></lightning-button-icon>
+                        </div>
+                        <div class="slds-col slds-size_1-of-2">
+                        </div>
+                        <div class="slds-col slds-size_1-of-2">
+                            <lightning-button-icon class="slds-m-left_xx-small" alternative-text="Zoom In" variant="container" icon-name="utility:zoomin" onclick={zoomOutFunction}></lightning-button-icon>
+                        </div>
+                        <div class="slds-col slds-size_1-of-2">
+                            <lightning-button-icon class="slds-m-left_xx-small" alternative-text="Zoom Out" variant="container" icon-name="utility:zoomout" onclick={zoomInFunction}></lightning-button-icon>
+                        </div>
+                        <div class="slds-col slds-size_1-of-2">
+                            <lightning-button-icon class="slds-m-left_xx-small" alternative-text="Toggle Chart View" variant="container" icon-name="utility:org_chart" onclick={toggleChartView}></lightning-button-icon>
+                        </div>
+                        <div class="slds-col slds-size_1-of-2">
+                            <lightning-button-icon class="slds-m-left_xx-small" alternative-text="Toggle Table View" variant="container" icon-name="utility:table" onclick={toggleTableView}></lightning-button-icon>
+                        </div>
+                        <div class="slds-col slds-size_1-of-2">
+                            <lightning-button-icon class="slds-m-left_xx-small" alternative-text="Export to PDF" variant="container" icon-name="doctype:pdf" onclick={exportToPdf}></lightning-button-icon>
+                        </div>
+                        <div class="slds-col slds-size_1-of-2">
+                            <lightning-button-icon class="slds-m-left_xx-small" alternative-text="Export to PNG" variant="container" icon-name="doctype:image" onclick={exportToPng}></lightning-button-icon>
+                        </div>
+                        <div class="slds-col slds-size_1-of-2">
+                            <!--<lightning-combobox
+                                    name="scale"
+                                    label="Scale"
+                                    value={selectedScaleValue}
+                                    placeholder="Select Scale"
+                                    options={options}
+                                    onchange={onChangeScale} >
+
+                            </lightning-combobox>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slds-float_right right-region">
+            <div class="gantt-container" lwc:dom="manual"></div>
+        </div>
+    </div>
+</template>

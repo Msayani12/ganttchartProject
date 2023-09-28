@@ -1,0 +1,43 @@
+/**
+ * Created by soura on 6/22/2023.
+ */
+.top-level{
+    background-color: aliceblue;
+}
+.weekend {
+    background: #f4f7f4 !important;
+}
+.gantt_task_progress {
+    text-align: left;
+    padding-left: 10px;
+    box-sizing: border-box;
+    color: white;
+    font-weight: bold;
+}
+.gantt-control{
+    height: 100px;
+    width: 100%;
+}
+.font-class{
+    color: aliceblue;
+}
+.left-region{
+    width: 7%;
+    height: 70vh;
+    background-color: rgb(239, 239, 255);
+
+}
+.right-region{
+    width: 93%;
+    height: 70vh;
+}
+.gantt-container{
+    font-family: 'Arial', sans-serif;
+}
+
+.gantt_grid_data .gantt_tree_content,
+.gantt_grid_scale .gantt_scale_cell,
+.gantt_task_row,
+.gantt_task_content {
+    font-family: 'Roboto', sans-serif;
+}

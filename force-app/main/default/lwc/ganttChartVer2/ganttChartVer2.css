@@ -1,0 +1,22 @@
+/**
+ * Created by SOURAV on 5/30/2023.
+ */
+.weekend {
+    background: #f4f7f4 !important;
+}
+.gantt-control{
+    height: 100px;
+    width: 100%;
+    background-color: aliceblue;
+}
+.gantt-fullscreen:hover {
+    background: rgba(150, 150, 150, 0.5);
+    opacity: 1;
+}
+.gantt_task_progress {
+    text-align: left;
+    padding-left: 10px;
+    box-sizing: border-box;
+    color: white;
+    font-weight: bold;
+}

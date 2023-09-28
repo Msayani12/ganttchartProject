@@ -1,0 +1,7 @@
+.container {
+    height : 76vh;
+}
+
+.b-float-root {
+    z-index: 100;
+}

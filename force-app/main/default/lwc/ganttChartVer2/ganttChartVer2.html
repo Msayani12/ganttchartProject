@@ -1,0 +1,23 @@
+<!--
+ - Created by SOURAV on 5/30/2023.
+ -->
+
+<!-- Gantt Chart Version 2 -->
+<template>
+    <div class="slds-p-around_x-small gantt-control">
+        <lightning-button label="Destroy Chart" onclick={destroyChart}></lightning-button>
+        <lightning-button label="Construct Chart" onclick={constructChart}></lightning-button>
+        <lightning-button label="Enable/ Disable Critical Path" onclick={enableOrDisableCriticalPath}></lightning-button>
+
+        <lightning-button-icon icon-name="utility:zoomin" onclick={zoomOutFunction}></lightning-button-icon>
+        <lightning-button-icon icon-name="utility:zoomout" onclick={zoomInFunction}></lightning-button-icon>
+        <lightning-combobox
+                name="scale"
+                label="Scale"
+                value={selectedScaleValue}
+                placeholder="Select Scale"
+                options={options}
+                onchange={onChangeScale} ></lightning-combobox>
+    </div>
+    <div class="gantt-container" height="800px" lwc:dom="manual"></div>
+</template>
